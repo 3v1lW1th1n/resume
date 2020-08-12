@@ -1,17 +1,17 @@
 //
-// Texture Picker
+// ResumePicker
 //
 
 window.onload = function() {
-	// Handle Texture Picker
-	const $picker = document.querySelector('#texture-picker');
+	// Handle Resume Picker
+	const $picker = document.querySelector('#resume-picker');
 	const $hidePicker = document.querySelector('#hidePicker');
 	const $header = document.querySelector('header');
 	
 	$picker.onclick = function(e) {
-		const textureName = e.target.id;
-		if (textureName && textureName != 'texture-picker' && textureName != 'hidePicker') {
-			$header.setAttribute('class', `texture-${textureName}`);
+		const resumeName = e.target.id;
+		if (resumeName && resumeName != 'resume-picker' && resumeName != 'hidePicker') {
+			$header.setAttribute('class', `resume-${resumeName}`);
 		}
 	}
 
