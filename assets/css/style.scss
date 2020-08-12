@@ -3,10 +3,10 @@
 
 @import "theme";
 
- {%- if site.texture.showPicker -%}
-#texture-picker {
+ {%- if site.resume.showPicker -%}
+#resume-picker {
     position: fixed;
-    {%- if site.texture.showNav -%}
+    {%- if site.resume.showNav -%}
         top: 100px;
         right: 5vw;
     {%- else -%}
@@ -31,7 +31,7 @@
         max-width: 200px;
         line-height: 1.3em;
     }
-    .texture-colors {
+    .resume-colors {
         display: flex;
         > div {
             width: 30px;
@@ -51,17 +51,17 @@
     #green { background-color: mediumseagreen; }
 }
 {%- endif -%}
-// Textures
-.texture-black {
-    background-image: url('{{ site.baseurl }}/assets/textures/black.jpg');
+// Resume
+.resume-black {
+    background-image: url('{{ site.baseurl }}/assets/resume/black.jpg');
 
     h2 {
         color: #999;
     }
 }
 
-.texture-blue {
-    background-image: url('{{ site.baseurl }}/assets/textures/blue.jpg');
+.resume-blue {
+    background-image: url('{{ site.baseurl }}/assets/resume/blue.jpg');
 
     h2 {
         color: #ddd;
@@ -76,24 +76,24 @@
     }
 }
 
-.texture-red {
-    background-image: url('{{ site.baseurl }}/assets/textures/red.jpg');
+.resume-red {
+    background-image: url('{{ site.baseurl }}/assets/resume/red.jpg');
 }
 
-.texture-purple {
-    background-image: url('{{ site.baseurl }}/assets/textures/purple.jpg');
+.resume-purple {
+    background-image: url('{{ site.baseurl }}/assets/resume/purple.jpg');
 }
 
-.texture-green {
-    background-image: url('{{ site.baseurl }}/assets/textures/green.jpg');
+.resume-green {
+    background-image: url('{{ site.baseurl }}/assets/resume/green.jpg');
 
     .post-date {
         color: #ccc;
     }
 }
 
-.texture-red,
-.texture-purple {
+.resume-red,
+.resume-purple {
     h2 {
         color: #ccc;
     }
