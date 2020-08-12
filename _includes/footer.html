@@ -1,18 +1,18 @@
-{%- if site.texture.analytics_id -%}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.texture.analytics_id }}"></script>
+{%- if site.resume.analytics_id -%}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.resume.analytics_id }}"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() { dataLayer.push(arguments); }
 	gtag('js', new Date());
 
-	gtag('config', '{{ site.texture.analytics_id }}');
+	gtag('config', '{{ site.resume.analytics_id }}');
 </script>
 {%- endif -%}
 
-{%- if site.texture.showPicker -%}
-<div id="texture-picker">
+{%- if site.resume.showPicker -%}
+<div id="resume-picker">
 	<div style="display:flex;justify-content: space-between">
-		<p>Select Texture</p>
+		<p>Select Resume</p>
 		<p><a id="hidePicker" href="#">Hide</a></p>
 	</div>
 	<div class="texture-colors">
@@ -28,7 +28,7 @@
 <script src="{{ "/assets/js/picker.js" | relative_url }}"></script>
 {%- endif -%}
 
-{%- if site.texture.useMathJax -%}
+{%- if site.resume.useMathJax -%}
 <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
